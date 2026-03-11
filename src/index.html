@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabores de Origen | Inicio</title>
+    <meta
+      name="description"
+      content="Portal de gastronomia con recetas, tecnicas y cultura culinaria mediterranea."
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar a contenido principal</a
+    >
+
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Portal Gastronomico</p>
+        <p class="brand">Sabores de Origen</p>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        type="button"
+      >
+        Menu
+      </button>
+      <nav
+        id="menu-principal"
+        class="site-nav"
+        aria-label="Navegacion principal"
+      >
+        <a aria-current="page" href="./index.html">Inicio</a>
+        <a href="./recetas.html">Recetas</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Cocina mediterranea contemporanea</p>
+          <h1 id="hero-title">
+            Cultura culinaria para cocinar, compartir y aprender
+          </h1>
+          <p>
+            Descubre ingredientes de temporada, tecnicas sencillas y propuestas
+            de menu con identidad local. Este portal combina inspiracion visual,
+            recetas y recursos practicos para cualquier nivel.
+          </p>
+          <a class="button-primary" href="./recetas.html"
+            >Ver recetas destacadas</a
+          >
+        </div>
+        <img
+          src="./assets/images/hero-plato.jpg"
+          alt="Mesa de madera con plato principal, pan artesanal y vegetales frescos"
+        />
+      </section>
+
+      <section class="highlights" aria-labelledby="destacados-title">
+        <h2 id="destacados-title">Destacados de esta semana</h2>
+        <div class="card-grid">
+          <article class="card" data-aos="fade-up">
+            <img
+              src="./assets/images/entrada.png"
+              alt="Entrante colorido de tomate, queso fresco y hojas verdes"
+            />
+            <h3>Entrantes frescos</h3>
+            <p>
+              Ideas rapidas para abrir mesa con producto local y contraste de
+              texturas.
+            </p>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="120">
+            <img
+              src="./assets/images/principal.jpg"
+              alt="Plato principal con pasta corta, salsa de tomate y albahaca"
+            />
+            <h3>Platos principales</h3>
+            <p>
+              Recetas completas pensadas para cocinar en casa sin
+              complicaciones.
+            </p>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="240">
+            <img
+              src="./assets/images/postre.gif"
+              alt="Postre emplatado con frutas y crema"
+            />
+            <h3>Postres con identidad</h3>
+            <p>
+              Opciones dulces de temporada con tecnicas simples y resultado
+              elegante.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sabores de Origen · Proyecto PEC1 · 2026</p>
+      <a href="./contacto.html">Solicitar asesoramiento gastronomico</a>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

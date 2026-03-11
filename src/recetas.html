@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabores de Origen | Recetas</title>
+    <meta
+      name="description"
+      content="Recetas de cocina mediterranea clasificadas por categoria."
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar a contenido principal</a
+    >
+
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Portal Gastronomico</p>
+        <p class="brand">Sabores de Origen</p>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        type="button"
+      >
+        Menu
+      </button>
+      <nav
+        id="menu-principal"
+        class="site-nav"
+        aria-label="Navegacion principal"
+      >
+        <a href="./index.html">Inicio</a>
+        <a aria-current="page" href="./recetas.html">Recetas</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="page-header" aria-labelledby="recetas-title">
+        <p class="eyebrow">Biblioteca culinaria</p>
+        <h1 id="recetas-title">Recetas por momento del dia</h1>
+        <p>
+          Filtra por categoria para encontrar propuestas adaptadas al tiempo del
+          que dispones.
+        </p>
+      </section>
+
+      <section aria-labelledby="filtro-title">
+        <h2 id="filtro-title">Filtrar recetas</h2>
+        <div
+          class="filter-group"
+          role="group"
+          aria-label="Filtros de categoria de receta"
+        >
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            Todas
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="rapida"
+            aria-pressed="false"
+          >
+            Rapidas
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="tradicional"
+            aria-pressed="false"
+          >
+            Tradicionales
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="vegetariana"
+            aria-pressed="false"
+          >
+            Vegetarianas
+          </button>
+        </div>
+        <p id="filter-status" class="status-text" aria-live="polite">
+          Mostrando 6 recetas.
+        </p>
+      </section>
+
+      <section aria-labelledby="listado-recetas">
+        <h2 id="listado-recetas">Listado</h2>
+        <div class="recipe-grid">
+          <article class="recipe-card" data-category="rapida">
+            <h3>Gazpacho clasico</h3>
+            <p>Sopa fria con tomate maduro, pepino y aceite de oliva virgen.</p>
+          </article>
+          <article class="recipe-card" data-category="tradicional">
+            <h3>Arroz al horno</h3>
+            <p>Receta tradicional con legumbres, caldo y coccion lenta.</p>
+          </article>
+          <article class="recipe-card" data-category="vegetariana">
+            <h3>Lasaña de berenjena</h3>
+            <p>Capas de berenjena, salsa de tomate y queso gratinado.</p>
+          </article>
+          <article class="recipe-card" data-category="rapida">
+            <h3>Tosta de sardina</h3>
+            <p>Pan crujiente, sardina marinada y crema de pimiento asado.</p>
+          </article>
+          <article class="recipe-card" data-category="tradicional">
+            <h3>Estofado de ternera</h3>
+            <p>Coccion lenta con verduras de temporada y vino tinto.</p>
+          </article>
+          <article class="recipe-card" data-category="vegetariana">
+            <h3>Cuscus de verduras</h3>
+            <p>Saten rapido con especias suaves y hierbas frescas.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sabores de Origen · Proyecto PEC1 · 2026</p>
+      <a href="./contacto.html">Enviar una sugerencia de receta</a>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

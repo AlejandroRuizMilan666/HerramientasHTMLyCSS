@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabores de Origen | Contacto</title>
+    <meta
+      name="description"
+      content="Formulario de contacto para consultas gastronomicas y colaboraciones."
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar a contenido principal</a
+    >
+
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Portal Gastronomico</p>
+        <p class="brand">Sabores de Origen</p>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        type="button"
+      >
+        Menu
+      </button>
+      <nav
+        id="menu-principal"
+        class="site-nav"
+        aria-label="Navegacion principal"
+      >
+        <a href="./index.html">Inicio</a>
+        <a href="./recetas.html">Recetas</a>
+        <a aria-current="page" href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="page-header" aria-labelledby="contacto-title">
+        <p class="eyebrow">Habla con el equipo</p>
+        <h1 id="contacto-title">Contacto y visitas guiadas</h1>
+        <p>
+          Resolvemos dudas sobre tecnicas, menues de temporada y talleres
+          gastronomicos.
+        </p>
+      </section>
+
+      <section class="contact-layout" aria-labelledby="form-title">
+        <div>
+          <h2 id="form-title">Formulario de consulta</h2>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div>
+              <label for="nombre">Nombre completo</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div>
+              <label for="correo">Correo electronico</label>
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div>
+              <label for="tema">Tema de interes</label>
+              <select id="tema" name="tema" required>
+                <option value="">Selecciona una opcion</option>
+                <option value="recetas">Recetas y tecnicas</option>
+                <option value="eventos">Eventos y talleres</option>
+                <option value="colaboracion">Colaboraciones</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <p class="help-text">Todos los campos son obligatorios.</p>
+            <button class="button-primary" type="submit">
+              Enviar consulta
+            </button>
+          </form>
+        </div>
+
+        <aside aria-labelledby="horario-title" class="hours-box">
+          <h2 id="horario-title">Horarios de atencion</h2>
+          <table>
+            <caption>
+              Canal de atencion semanal
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Horario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Lunes a viernes</th>
+                <td>09:00 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sabado</th>
+                <td>10:00 - 14:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Domingo</th>
+                <td>Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sabores de Origen · Proyecto PEC1 · 2026</p>
+      <a href="./recetas.html">Explorar todas las recetas</a>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
