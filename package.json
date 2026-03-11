@@ -1,0 +1,23 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "Portal web de gastronomia para PEC1",
+  "scripts": {
+    "dev": "parcel src/index.html src/recetas.html src/contacto.html --open",
+    "build": "parcel build src/index.html src/recetas.html src/contacto.html --public-url ./",
+    "clean": "powershell -Command \"if (Test-Path dist) { Remove-Item -Recurse -Force dist }; if (Test-Path .parcel-cache) { Remove-Item -Recurse -Force .parcel-cache }\""
+  },
+  "keywords": [
+    "gastronomia",
+    "parcel",
+    "pec"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "aos": "^2.3.4",
+    "parcel": "^2.16.4",
+    "sass": "^1.97.3"
+  }
+}
