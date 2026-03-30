@@ -20,8 +20,8 @@ function updateFilter(activeFilter) {
   let visibleCount = 0;
 
   recipeCards.forEach((card) => {
-    const cardCategory = card.getAttribute("data-category");
-    const isVisible = activeFilter === "all" || activeFilter === cardCategory;
+    const cardCategories = (card.getAttribute("data-category") || "").split(" ");
+    const isVisible = activeFilter === "all" || cardCategories.includes(activeFilter);
 
     card.classList.toggle("is-hidden", !isVisible);
     if (isVisible) {

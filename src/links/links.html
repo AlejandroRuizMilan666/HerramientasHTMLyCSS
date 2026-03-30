@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabores de Origen | Enlaces</title>
+    <meta
+      name="description"
+      content="Documentacion del proyecto con fuentes, atribuciones y declaracion de uso de herramientas externas."
+    />
+    <link rel="stylesheet" href="../styles/main.scss" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar a contenido principal</a
+    >
+
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Portal Gastronomico</p>
+        <p class="brand">Sabores de Origen</p>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        type="button"
+      >
+        Menu
+      </button>
+      <nav
+        id="menu-principal"
+        class="site-nav"
+        aria-label="Navegacion principal"
+      >
+        <a href="../index.html">Inicio</a>
+        <a href="../categorias/recetas.html">Recetas</a>
+        <a aria-current="page" href="../links/links.html">Enlaces</a>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="page-header" aria-labelledby="documentacion-title">
+        <p class="eyebrow">Memoria del proyecto</p>
+        <h1 id="documentacion-title">Documentación, fuentes y atribuciones</h1>
+        <p>
+          Esta pagina recoge las referencias utilizadas en el sitio, las
+          observaciones sobre licencias y una explicación sobre el uso de
+          herramientas de IA.
+        </p>
+      </section>
+
+      <section class="doc-grid" aria-labelledby="fuentes-title">
+        <article class="doc-card" aria-labelledby="fuentes-contenido-title">
+          <h2 id="fuentes-contenido-title">Fuentes del contenido publicado</h2>
+          <ul class="source-list">
+            <li>
+              Los textos descriptivos de la portada, las fichas y los detalles
+              de receta se han redactado especificamente para esta practica a
+              partir de explicaciones culinarias generales y no reproducen de
+              forma literal un texto externo.
+            </li>
+            <li>
+              Video de apoyo para gazpacho clasico:
+              <a href="https://www.youtube.com/watch?v=IzVBDPgwQPE"
+                >YouTube - Como preparar gazpacho clasico</a
+              >.
+            </li>
+            <li>
+              Video de apoyo para arroz con pollo teriyaki:
+              <a href="https://www.youtube.com/watch?v=bBmHCpqRkYc"
+                >YouTube - Como preparar arroz con pollo teriyaki</a
+              >.
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-card" aria-labelledby="fuentes-visuales-title">
+          <h2 id="fuentes-visuales-title">Recursos visuales</h2>
+          <ul class="source-list">
+            <li>
+              Imágenes y fotografías del proyecto: recursos descargados o
+              adaptados a partir de Pixabay.
+              <a href="https://pixabay.com/es/">Visitar Pixabay</a>.
+            </li>
+            <li>
+              Las imágenes utilizadas en portada, categorías y detalles deben
+              conservar su referencia original y revisarse según la licencia
+              concreta del recurso antes de una reutilización fuera del ámbito
+              académico.
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-card" aria-labelledby="licencias-title">
+          <h2 id="licencias-title">Licencias y atribuciones</h2>
+          <ul class="source-list">
+            <li>
+              En esta versión no se ha documentado ningún recurso bajo licencia
+              copyleft.
+            </li>
+            <li>
+              Los videos incrustados siguen siendo contenido alojado en
+              plataformas de terceros y se muestran mediante inserción externa,
+              por lo que sus condiciones de uso dependen de la plataforma de
+              origen y del titular del contenido.
+            </li>
+          </ul>
+        </article>
+
+        <article class="doc-card compliance-note" aria-labelledby="ia-title">
+          <h2 id="ia-title">Declaración sobre IA generativa</h2>
+          <p>
+            Para la elaboracion o reformulacion de contenido en esta pagina se
+            ha utilizado asistencia de IA generativa. Algunas imagenes y algunas
+            partes del texto han sido desarrollados con ChatGPT para agilizar el
+            contenido bruto de la web.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sabores de Origen · Proyecto PEC1 · 2026</p>
+      <a href="../categorias/recetas.html">Volver al listado de recetas</a>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

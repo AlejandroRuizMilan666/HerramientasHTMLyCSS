@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Portal web de gastronomia para PEC1",
   "scripts": {
-    "dev": "parcel src/index.html src/recetas.html src/contacto.html --open",
-    "build": "parcel build src/index.html src/recetas.html src/contacto.html --public-url ./",
+    "dev": "parcel src/index.html src/categorias/recetas.html src/links/links.html src/det1/gazpacho-clasico.html src/det2/arroz-con-pollo-teriyaki.html --open",
+    "build": "parcel build src/index.html src/categorias/recetas.html src/links/links.html src/det1/gazpacho-clasico.html src/det2/arroz-con-pollo-teriyaki.html --public-url ./",
     "clean": "powershell -Command \"if (Test-Path dist) { Remove-Item -Recurse -Force dist }; if (Test-Path .parcel-cache) { Remove-Item -Recurse -Force .parcel-cache }\""
   },
   "keywords": [

@@ -8,7 +8,7 @@
       name="description"
       content="Recetas de cocina mediterranea clasificadas por categoria."
     />
-    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="../styles/main.scss" />
   </head>
   <body>
     <a class="skip-link" href="#contenido-principal"
@@ -33,9 +33,9 @@
         class="site-nav"
         aria-label="Navegacion principal"
       >
-        <a href="./index.html">Inicio</a>
+        <a href="../index.html">Inicio</a>
         <a aria-current="page" href="./recetas.html">Recetas</a>
-        <a href="./contacto.html">Contacto</a>
+        <a href="../links/links.html">Enlaces</a>
       </nav>
     </header>
 
@@ -88,6 +88,14 @@
           >
             Vegetarianas
           </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="exotica"
+            aria-pressed="false"
+          >
+            Exoticas
+          </button>
         </div>
         <p id="filter-status" class="status-text" aria-live="polite">
           Mostrando 6 recetas.
@@ -97,27 +105,62 @@
       <section aria-labelledby="listado-recetas">
         <h2 id="listado-recetas">Listado</h2>
         <div class="recipe-grid">
-          <article class="recipe-card" data-category="rapida">
+          <article class="recipe-card" data-category="rapida vegetariana">
+            <img
+              src="../assets/images/entrada.jpg"
+              alt="Gazpacho clasico presentado en cuenco con verduras frescas"
+            />
             <h3>Gazpacho clasico</h3>
             <p>Sopa fria con tomate maduro, pepino y aceite de oliva virgen.</p>
+            <a class="category-link" href="../det1/gazpacho-clasico.html"
+              >Ver detalle de esta receta</a
+            >
+          </article>
+          <article class="recipe-card" data-category="exotica">
+            <img
+              src="../assets/images/principal.jpg"
+              alt="Arroz con pollo teriyaki servido en bol"
+            />
+            <h3>Arroz con pollo teriyaki</h3>
+            <p>Arroz blanco con pollo glaseado en salsa teriyaki casera.</p>
+            <a
+              class="category-link"
+              href="../det2/arroz-con-pollo-teriyaki.html"
+              >Ver detalle de esta receta</a
+            >
           </article>
           <article class="recipe-card" data-category="tradicional">
-            <h3>Arroz al horno</h3>
-            <p>Receta tradicional con legumbres, caldo y coccion lenta.</p>
-          </article>
-          <article class="recipe-card" data-category="vegetariana">
-            <h3>Lasaña de berenjena</h3>
-            <p>Capas de berenjena, salsa de tomate y queso gratinado.</p>
+            <img
+              src="../assets/images/postre.jpg"
+              alt="Torrija clasica emplatada con canela y miel"
+            />
+            <h3>Torrija clasica</h3>
+            <p>
+              Pan empapado en leche con huevo, frito y rebozado en canela y
+              azucar.
+            </p>
           </article>
           <article class="recipe-card" data-category="rapida">
+            <img
+              src="../assets/images/sardina.png"
+              alt="Tosta de sardina emplatada"
+            />
             <h3>Tosta de sardina</h3>
             <p>Pan crujiente, sardina marinada y crema de pimiento asado.</p>
           </article>
           <article class="recipe-card" data-category="tradicional">
+            <img
+              src="../assets/images/estofado.png"
+              alt="Estofado de ternera emplatado"
+            />
             <h3>Estofado de ternera</h3>
             <p>Coccion lenta con verduras de temporada y vino tinto.</p>
           </article>
           <article class="recipe-card" data-category="vegetariana">
+            <img
+              src="../assets/images/cous-cous.png"
+              alt="Cuscus de verduras emplatado"
+            />
             <h3>Cuscus de verduras</h3>
             <p>Saten rapido con especias suaves y hierbas frescas.</p>
           </article>
@@ -127,9 +170,9 @@
 
     <footer class="site-footer">
       <p>Sabores de Origen · Proyecto PEC1 · 2026</p>
-      <a href="./contacto.html">Enviar una sugerencia de receta</a>
+      <a href="../links/links.html">Enviar una sugerencia de receta</a>
     </footer>
 
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>
