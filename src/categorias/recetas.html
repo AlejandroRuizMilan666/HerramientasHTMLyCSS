@@ -106,10 +106,38 @@
         <h2 id="listado-recetas">Listado</h2>
         <div class="recipe-grid">
           <article class="recipe-card" data-category="rapida vegetariana">
-            <img
-              src="../assets/images/entrada.jpg"
-              alt="Gazpacho clasico presentado en cuenco con verduras frescas"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/entrada.jpg?as=avif&width=300 300w,
+                  ../assets/images/entrada.jpg?as=avif&width=500 500w,
+                  ../assets/images/entrada.jpg?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/entrada.jpg?as=webp&width=300 300w,
+                  ../assets/images/entrada.jpg?as=webp&width=500 500w,
+                  ../assets/images/entrada.jpg?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/entrada.jpg?width=500"
+                srcset="
+                  ../assets/images/entrada.jpg?width=300 300w,
+                  ../assets/images/entrada.jpg?width=500 500w,
+                  ../assets/images/entrada.jpg?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Gazpacho clasico presentado en cuenco con verduras frescas"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Gazpacho clasico</h3>
             <p>Sopa fria con tomate maduro, pepino y aceite de oliva virgen.</p>
             <a class="category-link" href="../det1/gazpacho-clasico.html"
@@ -117,10 +145,38 @@
             >
           </article>
           <article class="recipe-card" data-category="exotica">
-            <img
-              src="../assets/images/principal.jpg"
-              alt="Arroz con pollo teriyaki servido en bol"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/principal.jpg?as=avif&width=300 300w,
+                  ../assets/images/principal.jpg?as=avif&width=500 500w,
+                  ../assets/images/principal.jpg?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/principal.jpg?as=webp&width=300 300w,
+                  ../assets/images/principal.jpg?as=webp&width=500 500w,
+                  ../assets/images/principal.jpg?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/principal.jpg?width=500"
+                srcset="
+                  ../assets/images/principal.jpg?width=300 300w,
+                  ../assets/images/principal.jpg?width=500 500w,
+                  ../assets/images/principal.jpg?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Arroz con pollo teriyaki servido en bol"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Arroz con pollo teriyaki</h3>
             <p>Arroz blanco con pollo glaseado en salsa teriyaki casera.</p>
             <a
@@ -130,10 +186,38 @@
             >
           </article>
           <article class="recipe-card" data-category="tradicional">
-            <img
-              src="../assets/images/postre.jpg"
-              alt="Torrija clasica emplatada con canela y miel"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/postre.jpg?as=avif&width=300 300w,
+                  ../assets/images/postre.jpg?as=avif&width=500 500w,
+                  ../assets/images/postre.jpg?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/postre.jpg?as=webp&width=300 300w,
+                  ../assets/images/postre.jpg?as=webp&width=500 500w,
+                  ../assets/images/postre.jpg?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/postre.jpg?width=500"
+                srcset="
+                  ../assets/images/postre.jpg?width=300 300w,
+                  ../assets/images/postre.jpg?width=500 500w,
+                  ../assets/images/postre.jpg?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Torrija clasica emplatada con canela y miel"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Torrija clasica</h3>
             <p>
               Pan empapado en leche con huevo, frito y rebozado en canela y
@@ -141,26 +225,110 @@
             </p>
           </article>
           <article class="recipe-card" data-category="rapida">
-            <img
-              src="../assets/images/sardina.png"
-              alt="Tosta de sardina emplatada"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/sardina.png?as=avif&width=300 300w,
+                  ../assets/images/sardina.png?as=avif&width=500 500w,
+                  ../assets/images/sardina.png?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/sardina.png?as=webp&width=300 300w,
+                  ../assets/images/sardina.png?as=webp&width=500 500w,
+                  ../assets/images/sardina.png?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/sardina.png?width=500"
+                srcset="
+                  ../assets/images/sardina.png?width=300 300w,
+                  ../assets/images/sardina.png?width=500 500w,
+                  ../assets/images/sardina.png?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Tosta de sardina emplatada"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Tosta de sardina</h3>
             <p>Pan crujiente, sardina marinada y crema de pimiento asado.</p>
           </article>
           <article class="recipe-card" data-category="tradicional">
-            <img
-              src="../assets/images/estofado.png"
-              alt="Estofado de ternera emplatado"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/estofado.png?as=avif&width=300 300w,
+                  ../assets/images/estofado.png?as=avif&width=500 500w,
+                  ../assets/images/estofado.png?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/estofado.png?as=webp&width=300 300w,
+                  ../assets/images/estofado.png?as=webp&width=500 500w,
+                  ../assets/images/estofado.png?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/estofado.png?width=500"
+                srcset="
+                  ../assets/images/estofado.png?width=300 300w,
+                  ../assets/images/estofado.png?width=500 500w,
+                  ../assets/images/estofado.png?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Estofado de ternera emplatado"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Estofado de ternera</h3>
             <p>Coccion lenta con verduras de temporada y vino tinto.</p>
           </article>
           <article class="recipe-card" data-category="vegetariana">
-            <img
-              src="../assets/images/cous-cous.png"
-              alt="Cuscus de verduras emplatado"
-            />
+            <picture class="recipe-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../assets/images/cous-cous.png?as=avif&width=300 300w,
+                  ../assets/images/cous-cous.png?as=avif&width=500 500w,
+                  ../assets/images/cous-cous.png?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../assets/images/cous-cous.png?as=webp&width=300 300w,
+                  ../assets/images/cous-cous.png?as=webp&width=500 500w,
+                  ../assets/images/cous-cous.png?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="../assets/images/cous-cous.png?width=500"
+                srcset="
+                  ../assets/images/cous-cous.png?width=300 300w,
+                  ../assets/images/cous-cous.png?width=500 500w,
+                  ../assets/images/cous-cous.png?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Cuscus de verduras emplatado"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Cuscus de verduras</h3>
             <p>Saten rapido con especias suaves y hierbas frescas.</p>
           </article>

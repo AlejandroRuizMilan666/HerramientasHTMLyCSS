@@ -54,10 +54,47 @@
 
       <section class="detail-hero" aria-labelledby="imagen-principal-teriyaki">
         <h2 id="imagen-principal-teriyaki">Imagen destacada</h2>
-        <img
-          src="../assets/images/principal.jpg"
-          alt="Bol de arroz con pollo teriyaki glaseado y sesamo"
-        />
+        <picture class="detail-hero-picture">
+          <source
+            media="(min-width: 780px)"
+            type="image/avif"
+            srcset="
+              ../assets/images/principal.jpg?as=avif&width=760   760w,
+              ../assets/images/principal.jpg?as=avif&width=1180 1180w
+            "
+            sizes="90vw"
+          />
+          <source
+            media="(min-width: 780px)"
+            type="image/webp"
+            srcset="
+              ../assets/images/principal.jpg?as=webp&width=760   760w,
+              ../assets/images/principal.jpg?as=webp&width=1180 1180w
+            "
+            sizes="90vw"
+          />
+          <source
+            type="image/avif"
+            srcset="
+              ../assets/images/pollo_3.png?as=avif&width=480 480w,
+              ../assets/images/pollo_3.png?as=avif&width=860 860w
+            "
+            sizes="92vw"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ../assets/images/pollo_3.png?as=webp&width=480 480w,
+              ../assets/images/pollo_3.png?as=webp&width=860 860w
+            "
+            sizes="92vw"
+          />
+          <img
+            src="../assets/images/pollo_3.png?width=480"
+            alt="Bol de arroz con pollo teriyaki glaseado y sesamo"
+            decoding="async"
+          />
+        </picture>
       </section>
 
       <section class="detail-copy" aria-labelledby="texto-teriyaki">
@@ -84,18 +121,93 @@
       <section class="detail-panel" aria-labelledby="galeria-teriyaki">
         <h2 id="galeria-teriyaki">Galeria de apoyo</h2>
         <div class="detail-gallery">
-          <img
-            src="../assets/images/pollo_1.png"
-            alt="Ingredientes para la salsa teriyaki"
-          />
-          <img
-            src="../assets/images/pollo_2.png"
-            alt="Pollo cocinado en la sarten"
-          />
-          <img
-            src="../assets/images/pollo_3.png"
-            alt="Emplatado del pollo con arroz"
-          />
+          <picture class="detail-gallery-picture">
+            <source
+              type="image/avif"
+              srcset="
+                ../assets/images/pollo_1.png?as=avif&width=320 320w,
+                ../assets/images/pollo_1.png?as=avif&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ../assets/images/pollo_1.png?as=webp&width=320 320w,
+                ../assets/images/pollo_1.png?as=webp&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <img
+              src="../assets/images/pollo_1.png?width=640"
+              srcset="
+                ../assets/images/pollo_1.png?width=320 320w,
+                ../assets/images/pollo_1.png?width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+              alt="Ingredientes para la salsa teriyaki"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <picture class="detail-gallery-picture">
+            <source
+              type="image/avif"
+              srcset="
+                ../assets/images/pollo_2.png?as=avif&width=320 320w,
+                ../assets/images/pollo_2.png?as=avif&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ../assets/images/pollo_2.png?as=webp&width=320 320w,
+                ../assets/images/pollo_2.png?as=webp&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <img
+              src="../assets/images/pollo_2.png?width=640"
+              srcset="
+                ../assets/images/pollo_2.png?width=320 320w,
+                ../assets/images/pollo_2.png?width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+              alt="Pollo cocinado en la sarten"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <picture class="detail-gallery-picture">
+            <source
+              type="image/avif"
+              srcset="
+                ../assets/images/pollo_3.png?as=avif&width=320 320w,
+                ../assets/images/pollo_3.png?as=avif&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ../assets/images/pollo_3.png?as=webp&width=320 320w,
+                ../assets/images/pollo_3.png?as=webp&width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+            />
+            <img
+              src="../assets/images/pollo_3.png?width=640"
+              srcset="
+                ../assets/images/pollo_3.png?width=320 320w,
+                ../assets/images/pollo_3.png?width=640 640w
+              "
+              sizes="(min-width: 780px) 30vw, 92vw"
+              alt="Emplatado del pollo con arroz"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
       </section>
 

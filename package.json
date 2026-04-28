@@ -19,5 +19,8 @@
     "aos": "^2.3.4",
     "parcel": "^2.16.4",
     "sass": "^1.97.3"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }

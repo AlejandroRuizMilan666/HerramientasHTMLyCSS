@@ -1,0 +1,18 @@
+{
+  "jpeg": {
+    "quality": 78,
+    "mozjpeg": true
+  },
+  "png": {
+    "quality": 78,
+    "compressionLevel": 9,
+    "palette": true
+  },
+  "webp": {
+    "quality": 78
+  },
+  "avif": {
+    "quality": 48,
+    "effort": 4
+  }
+}

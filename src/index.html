@@ -55,20 +55,91 @@
             >Ver recetas destacadas</a
           >
         </div>
-        <img
-          src="./assets/images/hero-plato.jpg"
-          alt="Mesa de madera con plato principal y productos de cocina"
-        />
+        <picture class="hero-picture media-blob" data-aos="zoom-in">
+          <source
+            type="image/avif"
+            srcset="
+              ./assets/images/hero-plato.jpg?as=avif&width=520   520w,
+              ./assets/images/hero-plato.jpg?as=avif&width=760   760w,
+              ./assets/images/hero-plato.jpg?as=avif&width=1100 1100w
+            "
+            sizes="(min-width: 780px) 46vw, 92vw"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ./assets/images/hero-plato.jpg?as=webp&width=520   520w,
+              ./assets/images/hero-plato.jpg?as=webp&width=760   760w,
+              ./assets/images/hero-plato.jpg?as=webp&width=1100 1100w
+            "
+            sizes="(min-width: 780px) 46vw, 92vw"
+          />
+          <img
+            src="./assets/images/hero-plato.jpg?width=760"
+            srcset="
+              ./assets/images/hero-plato.jpg?width=520   520w,
+              ./assets/images/hero-plato.jpg?width=760   760w,
+              ./assets/images/hero-plato.jpg?width=1100 1100w
+            "
+            sizes="(min-width: 780px) 46vw, 92vw"
+            alt="Mesa de madera con plato principal y productos de cocina"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+        <!-- Olas organicas: borde inferior animado del hero -->
+        <svg
+          class="hero-waves"
+          viewBox="0 0 2400 120"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            class="wave wave-1"
+            d="M0,60 C200,110 400,10 600,60 C800,110 1000,10 1200,60 C1400,110 1600,10 1800,60 C2000,110 2200,10 2400,60 L2400,120 L0,120 Z"
+          />
+          <path
+            class="wave wave-2"
+            d="M0,75 C150,35 350,105 550,68 C750,35 950,92 1200,62 C1350,35 1550,105 1750,68 C1950,35 2150,92 2400,62 L2400,120 L0,120 Z"
+          />
+          <path
+            class="wave wave-3"
+            d="M0,92 C250,62 500,108 700,82 C900,58 1050,96 1200,88 C1400,78 1650,108 1900,82 C2100,58 2250,96 2400,88 L2400,120 L0,120 Z"
+          />
+        </svg>
       </section>
 
       <section class="highlights" aria-labelledby="destacados-title">
         <h2 id="destacados-title">Destacados de esta semana</h2>
         <div class="card-grid">
           <article class="card" data-aos="fade-up">
-            <img
-              src="./assets/images/entrada.jpg"
-              alt="Entrante de gazpacho con hojas de rúcula"
-            />
+            <picture class="card-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/entrada.jpg?as=avif&width=380 1x,
+                  ./assets/images/entrada.jpg?as=avif&width=760 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/entrada.jpg?as=webp&width=380 1x,
+                  ./assets/images/entrada.jpg?as=webp&width=760 2x
+                "
+              />
+              <img
+                src="./assets/images/entrada.jpg?width=380"
+                srcset="
+                  ./assets/images/entrada.jpg?width=380 1x,
+                  ./assets/images/entrada.jpg?width=760 2x
+                "
+                alt="Entrante de gazpacho con hojas de rucula"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Entrantes frescos</h3>
             <p>
               Ideas rapidas para abrir mesa con producto local y contraste de
@@ -76,10 +147,38 @@
             </p>
           </article>
           <article class="card" data-aos="fade-up" data-aos-delay="120">
-            <img
-              src="./assets/images/principal.jpg"
-              alt="Plato principal con arroz y pollo teriyaki"
-            />
+            <picture class="card-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/principal.jpg?as=avif&width=340 340w,
+                  ./assets/images/principal.jpg?as=avif&width=520 520w,
+                  ./assets/images/principal.jpg?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/principal.jpg?as=webp&width=340 340w,
+                  ./assets/images/principal.jpg?as=webp&width=520 520w,
+                  ./assets/images/principal.jpg?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="./assets/images/principal.jpg?width=520"
+                srcset="
+                  ./assets/images/principal.jpg?width=340 340w,
+                  ./assets/images/principal.jpg?width=520 520w,
+                  ./assets/images/principal.jpg?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Plato principal con arroz y pollo teriyaki"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Platos principales</h3>
             <p>
               Recetas completas pensadas para cocinar en casa sin
@@ -87,10 +186,38 @@
             </p>
           </article>
           <article class="card" data-aos="fade-up" data-aos-delay="240">
-            <img
-              src="./assets/images/postre.jpg"
-              alt="Torrija emplatada con frutas"
-            />
+            <picture class="card-picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/postre.jpg?as=avif&width=340 340w,
+                  ./assets/images/postre.jpg?as=avif&width=520 520w,
+                  ./assets/images/postre.jpg?as=avif&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/postre.jpg?as=webp&width=340 340w,
+                  ./assets/images/postre.jpg?as=webp&width=520 520w,
+                  ./assets/images/postre.jpg?as=webp&width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+              />
+              <img
+                src="./assets/images/postre.jpg?width=520"
+                srcset="
+                  ./assets/images/postre.jpg?width=340 340w,
+                  ./assets/images/postre.jpg?width=520 520w,
+                  ./assets/images/postre.jpg?width=760 760w
+                "
+                sizes="(min-width: 780px) 30vw, 92vw"
+                alt="Torrija emplatada con frutas"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <h3>Postres con identidad</h3>
             <p>
               Opciones dulces de temporada con tecnicas simples y resultado

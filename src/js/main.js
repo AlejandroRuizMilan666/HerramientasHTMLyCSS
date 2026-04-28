@@ -48,8 +48,11 @@ if (filterButtons.length > 0 && recipeCards.length > 0) {
   });
 }
 
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 AOS.init({
-  duration: 700,
+  duration: prefersReducedMotion ? 0 : 700,
   once: true,
-  easing: "ease-out-cubic"
+  easing: "ease-out-cubic",
+  disable: prefersReducedMotion
 });
