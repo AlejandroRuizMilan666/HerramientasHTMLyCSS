@@ -8,7 +8,7 @@
       name="description"
       content="Detalle de la receta de arroz con pollo teriyaki con tecnicas, imagenes y video."
     />
-    <link rel="stylesheet" href="../styles/main.scss" />
+    <link rel="stylesheet" href="../styles/main.scss" media="print" onload="this.media='all'" />
   </head>
   <body>
     <a class="skip-link" href="#contenido-principal"
@@ -92,6 +92,8 @@
           <img
             src="../assets/images/pollo_3.png?width=480"
             alt="Bol de arroz con pollo teriyaki glaseado y sesamo"
+            width="480"
+            height="360"
             fetchpriority="high"
             loading="eager"
             decoding="async"
@@ -216,22 +218,32 @@
       <section class="detail-panel" aria-labelledby="video-teriyaki">
         <h2 id="video-teriyaki">Video recomendado</h2>
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/bBmHCpqRkYc?si=EJrkrIhikKr68TI1"
-            title="Como preparar arroz con pollo teriyaki"
-            loading="lazy"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="youtube-facade"
+            data-video-id="bBmHCpqRkYc"
+            data-title="Como preparar arroz con pollo teriyaki"
+          >
+            <img
+              src="https://i.ytimg.com/vi/bBmHCpqRkYc/hqdefault.jpg"
+              alt="Miniatura del video Como preparar arroz con pollo teriyaki"
+              width="480"
+              height="360"
+              loading="lazy"
+            />
+            <button
+              class="youtube-facade__play"
+              type="button"
+              aria-label="Reproducir video Como preparar arroz con pollo teriyaki"
+            >
+              <svg viewBox="0 0 68 48" aria-hidden="true" focusable="false">
+                <path
+                  d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                  fill="#f00"
+                />
+                <path d="M45 24 27 14v20" fill="#fff" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>

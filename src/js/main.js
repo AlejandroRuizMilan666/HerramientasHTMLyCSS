@@ -1,6 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const nav = document.querySelector("#menu-principal");
 const menuToggle = document.querySelector(".menu-toggle");
 
@@ -48,11 +45,49 @@ if (filterButtons.length > 0 && recipeCards.length > 0) {
   });
 }
 
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const youtubeFacade = document.querySelector(".youtube-facade");
+if (youtubeFacade) {
+  youtubeFacade.addEventListener("click", () => {
+    const videoId = youtubeFacade.dataset.videoId;
+    const title = youtubeFacade.dataset.title || "Video de YouTube";
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    iframe.title = title;
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = "position:absolute;inset:0;width:100%;height:100%;border:0;";
+    youtubeFacade.replaceWith(iframe);
+  });
+}
 
-AOS.init({
-  duration: prefersReducedMotion ? 0 : 700,
-  once: true,
-  easing: "ease-out-cubic",
-  disable: prefersReducedMotion
-});
+(async function initAOS() {
+  if (!document.querySelector("[data-aos]")) return;
+  try {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const aosModule = await import("aos");
+    await import("aos/dist/aos.css");
+
+    const AOS =
+      aosModule?.default?.default ||
+      aosModule?.default ||
+      aosModule?.AOS ||
+      aosModule;
+
+    if (typeof AOS?.init === "function") {
+      AOS.init({
+        duration: prefersReducedMotion ? 0 : 700,
+        once: true,
+        easing: "ease-out-cubic",
+        disable: prefersReducedMotion,
+      });
+    } else {
+      console.warn("AOS cargado sin metodo init; se omite inicializacion.");
+    }
+  } catch (error) {
+    console.error("No se pudo inicializar AOS:", error);
+  }
+})();

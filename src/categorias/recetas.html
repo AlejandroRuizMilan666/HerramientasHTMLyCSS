@@ -8,7 +8,7 @@
       name="description"
       content="Recetas de cocina mediterranea clasificadas por categoria."
     />
-    <link rel="stylesheet" href="../styles/main.scss" />
+    <link rel="stylesheet" href="../styles/main.scss" media="print" onload="this.media='all'" />
   </head>
   <body>
     <a class="skip-link" href="#contenido-principal"
@@ -134,7 +134,7 @@
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
                 alt="Gazpacho clasico presentado en cuenco con verduras frescas"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
               />
             </picture>
@@ -173,7 +173,7 @@
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
                 alt="Arroz con pollo teriyaki servido en bol"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
               />
             </picture>
@@ -214,7 +214,8 @@
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
                 alt="Torrija clasica emplatada con canela y miel"
-                loading="lazy"
+                fetchpriority="high"
+                loading="eager"
                 decoding="async"
               />
             </picture>
@@ -230,6 +231,7 @@
                 type="image/avif"
                 srcset="
                   ../assets/images/sardina.png?as=avif&width=300 300w,
+                  ../assets/images/sardina.png?as=avif&width=350 350w,
                   ../assets/images/sardina.png?as=avif&width=500 500w,
                   ../assets/images/sardina.png?as=avif&width=760 760w
                 "
@@ -239,15 +241,17 @@
                 type="image/webp"
                 srcset="
                   ../assets/images/sardina.png?as=webp&width=300 300w,
+                  ../assets/images/sardina.png?as=webp&width=350 350w,
                   ../assets/images/sardina.png?as=webp&width=500 500w,
                   ../assets/images/sardina.png?as=webp&width=760 760w
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
               />
               <img
-                src="../assets/images/sardina.png?width=500"
+                src="../assets/images/sardina.png?width=350"
                 srcset="
                   ../assets/images/sardina.png?width=300 300w,
+                  ../assets/images/sardina.png?width=350 350w,
                   ../assets/images/sardina.png?width=500 500w,
                   ../assets/images/sardina.png?width=760 760w
                 "
@@ -266,6 +270,7 @@
                 type="image/avif"
                 srcset="
                   ../assets/images/estofado.png?as=avif&width=300 300w,
+                  ../assets/images/estofado.png?as=avif&width=350 350w,
                   ../assets/images/estofado.png?as=avif&width=500 500w,
                   ../assets/images/estofado.png?as=avif&width=760 760w
                 "
@@ -275,15 +280,17 @@
                 type="image/webp"
                 srcset="
                   ../assets/images/estofado.png?as=webp&width=300 300w,
+                  ../assets/images/estofado.png?as=webp&width=350 350w,
                   ../assets/images/estofado.png?as=webp&width=500 500w,
                   ../assets/images/estofado.png?as=webp&width=760 760w
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
               />
               <img
-                src="../assets/images/estofado.png?width=500"
+                src="../assets/images/estofado.png?width=350"
                 srcset="
                   ../assets/images/estofado.png?width=300 300w,
+                  ../assets/images/estofado.png?width=350 350w,
                   ../assets/images/estofado.png?width=500 500w,
                   ../assets/images/estofado.png?width=760 760w
                 "
@@ -302,6 +309,7 @@
                 type="image/avif"
                 srcset="
                   ../assets/images/cous-cous.png?as=avif&width=300 300w,
+                  ../assets/images/cous-cous.png?as=avif&width=350 350w,
                   ../assets/images/cous-cous.png?as=avif&width=500 500w,
                   ../assets/images/cous-cous.png?as=avif&width=760 760w
                 "
@@ -311,15 +319,17 @@
                 type="image/webp"
                 srcset="
                   ../assets/images/cous-cous.png?as=webp&width=300 300w,
+                  ../assets/images/cous-cous.png?as=webp&width=350 350w,
                   ../assets/images/cous-cous.png?as=webp&width=500 500w,
                   ../assets/images/cous-cous.png?as=webp&width=760 760w
                 "
                 sizes="(min-width: 780px) 30vw, 92vw"
               />
               <img
-                src="../assets/images/cous-cous.png?width=500"
+                src="../assets/images/cous-cous.png?width=350"
                 srcset="
                   ../assets/images/cous-cous.png?width=300 300w,
+                  ../assets/images/cous-cous.png?width=350 350w,
                   ../assets/images/cous-cous.png?width=500 500w,
                   ../assets/images/cous-cous.png?width=760 760w
                 "
